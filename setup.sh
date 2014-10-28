@@ -15,5 +15,4 @@ sudo npm install -g forever
 apt-get install tmux
 
 apt-get install git
-git config --global user.name "AshleyF"
-git config --global user.email "ashley.feniello@live.com"
+git config --global push.default simple
