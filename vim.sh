@@ -18,5 +18,5 @@ git clone git://github.com/tpope/vim-commentary.git
 git clone git://github.com/tpope/vim-repeat.git
 git clone http://github.com/mattn/emmet-vim.git
 
-rm ./.vimrc
+rm ~/.vimrc
 cp ./.vimrc ~/.vimrc
