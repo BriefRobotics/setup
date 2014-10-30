@@ -1,7 +1,7 @@
 apt-get install vim
 
 # vimrc
-cp -f ./.vimrc ~/.vimrc
+cp -f ./vimrc ~/.vimrc
 
 # monokai
 mkdir ~/.vim ~/.vim/colors
@@ -21,4 +21,4 @@ git clone git://github.com/tpope/vim-commentary.git
 git clone git://github.com/tpope/vim-repeat.git
 git clone http://github.com/mattn/emmet-vim.git
 git clone https://github.com/pangloss/vim-javascript.git
-
+git clone https://github.com/scrooloose/nerdtree.git
