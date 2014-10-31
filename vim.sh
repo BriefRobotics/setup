@@ -1,7 +1,7 @@
 apt-get install vim
 
 # vimrc
-cp -f ./vimrc ~/.vimrc
+cp -f ./.vimrc ~/.vimrc
 
 # monokai
 mkdir ~/.vim ~/.vim/colors

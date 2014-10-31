@@ -22,3 +22,6 @@ git config --global push.default simple
 
 apt-get install atom
 apm install vim-mode
+
+apt-get install exuberant-ctags
+cp -f ./.ctags ~/.ctags
