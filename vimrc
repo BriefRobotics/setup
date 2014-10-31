@@ -7,7 +7,8 @@ set background=dark
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 
 nmap <leader>v :e ~/.vimrc<cr>
-nmap <leader>s :w<cr>
+nmap <leader>w :w<cr>
+nmap <leader>q :q<cr>
 nmap <leader>n :NERDTreeToggle<cr>
 
 nmap <leader>r :! clear && cd server && sudo node app.js<cr>

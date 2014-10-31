@@ -19,3 +19,6 @@ apt-get install gnome-tweak-tool
 
 apt-get install git
 git config --global push.default simple
+
+apt-get install atom
+apm install vim-mode
