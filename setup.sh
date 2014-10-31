@@ -14,5 +14,8 @@ sudo npm install -g forever
 
 apt-get install tmux
 
+apt-get install unity-tweak-tool
+apt-get install gnome-tweak-tool
+
 apt-get install git
 git config --global push.default simple
