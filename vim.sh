@@ -22,3 +22,5 @@ git clone git://github.com/tpope/vim-repeat.git
 git clone http://github.com/mattn/emmet-vim.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/majutsushi/tagbar.git
+git clone git://github.com/tpope/vim-unimpaired.git
