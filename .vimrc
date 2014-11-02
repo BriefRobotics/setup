@@ -11,6 +11,7 @@ nmap <leader>v :e ~/.vimrc<cr>
 nmap <leader>w :w<cr>
 nmap <leader>q :q<cr>
 nmap <leader>n :NERDTreeToggle<cr>
+nmap <leader>t :tabnext<cr>
 nmap <esc><esc> :nohlsearch<cr>
 
 nmap <leader>r :! clear && cd server && sudo node app.js<cr>
