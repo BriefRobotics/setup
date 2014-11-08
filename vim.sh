@@ -24,3 +24,12 @@ git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone git://github.com/tpope/vim-unimpaired.git
+git clone https://github.com/suan/vim-instant-markdown.git
+
+# markdown
+apt-get install ruby
+apt-get install ruby-dev
+gem install pygments.rb
+gem install redcarpet
+npm -g install socket.io@0.9 # newer doesn't work with instant-markdown
+npm -g install instant-markdown-d
