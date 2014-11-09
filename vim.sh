@@ -24,12 +24,17 @@ git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone git://github.com/tpope/vim-unimpaired.git
-git clone https://github.com/suan/vim-instant-markdown.git
 
-# markdown
+# markdown preview
 apt-get install ruby
 apt-get install ruby-dev
 gem install pygments.rb
 gem install redcarpet
 npm -g install socket.io@0.9 # newer doesn't work with instant-markdown
 npm -g install instant-markdown-d
+git clone https://github.com/suan/vim-instant-markdown.git
+
+# TeX preview
+apt-get install okular # PDF viewer
+apt-get install texlive-latex-base
+git clone https://github.com/xuhdev/vim-latex-live-preview
