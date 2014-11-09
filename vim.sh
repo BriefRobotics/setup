@@ -37,4 +37,5 @@ git clone https://github.com/suan/vim-instant-markdown.git
 # TeX preview
 apt-get install okular # PDF viewer
 apt-get install texlive-latex-base
+apt-get install texlive-latex-extra
 git clone https://github.com/xuhdev/vim-latex-live-preview
