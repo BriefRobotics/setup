@@ -22,9 +22,19 @@ git clone git://github.com/tpope/vim-repeat.git
 git clone http://github.com/mattn/emmet-vim.git
 git clone https://github.com/pangloss/vim-javascript.git
 git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone git://github.com/tpope/vim-unimpaired.git
-git clone https://github.com/kongo2002/fsharp-vim
+
+# fsharp bindings
+mkdir tmp
+pushd .
+cd tmp
+sudo git clone https://github.com/fsharp/fsharpbinding
+cd fsharpbinding/vim/
+sudo make install
+popd
+rm -rf tmp
 
 # markdown preview
 apt-get install ruby
