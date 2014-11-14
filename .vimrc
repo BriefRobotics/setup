@@ -9,16 +9,22 @@ set background=dark
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch incsearch
 set updatetime=500
-
 nmap <leader>v :e ~/.vimrc<cr>
 nmap <leader>a ggVG
 nmap <leader>w :w<cr>
 nmap <leader>q :q<cr>
 nmap <leader>n :NERDTreeToggle<cr>
-nmap <leader>t :tabnext<cr>
+nmap <leader>b :tabnext<cr>
 nmap <leader>x :LLPStartPreview<cr>
 nmap <esc><esc> :nohlsearch<cr>
-nmap <leader>f :!rm -f main.exe && clear && fsharpc -o main.exe % && ./main.exe<cr>
+noremap <leader>i :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
+vnoremap <leader>i :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
 
+nmap <leader>f :!rm -f main.exe && clear && fsharpc -o main.exe % && ./main.exe<cr>
 nmap <leader>r :!clear && cd server && sudo node app.js<cr>
 nmap <leader>g :vimgrep //g **<left><left><left><left><left>
+
+augroup fsharp_au
+    au!
+    au CursorHold *.fs,*.fsi,*.fsx SyntasticCheck
+augroup END
