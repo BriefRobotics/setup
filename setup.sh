@@ -23,5 +23,8 @@ git config --global push.default simple
 apt-get install atom
 apm install vim-mode
 
+apt-get install mono-complete
+apt-get install fsharp
+
 apt-get install exuberant-ctags
 cp -f ./.ctags ~/.ctags
