@@ -17,6 +17,7 @@ nmap <leader>n :NERDTreeToggle<cr>
 nmap <leader>b :tabnext<cr>
 nmap <leader>x :LLPStartPreview<cr>
 nmap <esc><esc> :nohlsearch<cr>
+noremap <a-cr> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 noremap <leader>i :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 vnoremap <leader>i :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
 
