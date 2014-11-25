@@ -28,3 +28,8 @@ apt-get install fsharp
 
 apt-get install exuberant-ctags
 cp -f ./.ctags ~/.ctags
+
+# clojure
+apt-get install default-jre
+cp lein /usr/local/bin
+chmod +x /usr/local/bin/lein
