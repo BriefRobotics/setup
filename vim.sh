@@ -25,9 +25,8 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/majutsushi/tagbar.git
 git clone git://github.com/tpope/vim-unimpaired.git
-git clone git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 git clone git://github.com/guns/vim-sexp.git
-git clone https://github.com/Lokaltog/vim-easymotion
+git clone git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 git clone git://github.com/tpope/vim-fireplace.git
 
 # fsharp bindings

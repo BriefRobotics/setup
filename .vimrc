@@ -11,17 +11,15 @@ set hlsearch incsearch
 set updatetime=500
 nmap <leader>v :e ~/.vimrc<cr>
 nmap <leader>a ggVG
-nmap <leader>w :w<cr>
-nmap <leader>q :q<cr>
 nmap <leader>n :NERDTreeToggle<cr>
 nmap <leader>b :tabnext<cr>
 nmap <leader>x :LLPStartPreview<cr>
-nmap <esc><esc> :nohlsearch<cr>
+nmap <esc><esc> :nohlsearch<cr>:w<cr>
 noremap <a-cr> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 noremap <leader>i :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 vnoremap <leader>i :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
 
-nmap <leader>f :!rm -f main.exe && clear && fsharpc -o main.exe % && ./main.exe<cr>
+nmap <leader>f :w<cr>:!rm -f main.exe && clear && fsharpc -o main.exe % && ./main.exe<cr>
 nmap <leader>r :!clear && cd server && sudo node app.js<cr>
 nmap <leader>g :vimgrep //g **<left><left><left><left><left>
 
