@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # startup script (Startup Applications)
 
 # apple keyboard function keys
