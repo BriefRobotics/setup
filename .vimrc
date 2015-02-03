@@ -19,6 +19,7 @@ noremap <a-cr> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 noremap <leader>i :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 vnoremap <leader>i :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
 
+" F#
 nmap <leader>f :w<cr>:!rm -f main.exe && clear && fsharpc -o main.exe % && ./main.exe<cr>
 nmap <leader>r :!clear && cd server && sudo node app.js<cr>
 nmap <leader>g :vimgrep //g **<left><left><left><left><left>
@@ -34,3 +35,7 @@ function! ChangePaste(type, ...)
     silent exe "normal! `[v`]\"_c"
     silent exe "normal! p"
 endfunction
+
+" Python
+
+vmap <leader>p :!python<cr>
