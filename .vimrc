@@ -39,3 +39,10 @@ endfunction
 " Python
 
 vmap <leader>p :!python<cr>
+set foldmethod=indent
+set foldlevel=99
+
+" Omni completion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
