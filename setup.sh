@@ -33,3 +33,5 @@ cp -f ./.ctags ~/.ctags
 apt-get install default-jre
 cp lein /usr/local/bin
 chmod +x /usr/local/bin/lein
+
+apt-get install gcc
