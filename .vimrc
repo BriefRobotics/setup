@@ -37,10 +37,13 @@ function! ChangePaste(type, ...)
 endfunction
 
 " Python
-
+nmap <leader>p :w<cr>:!python %<cr>
 vmap <leader>p :!python<cr>
 set foldmethod=indent
 set foldlevel=99
+
+" C
+nmap <leader>c :w<cr>:!gcc % -o %.exe & ./%.exe<cr>
 
 " Omni completion
 filetype plugin on
