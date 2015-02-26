@@ -9,12 +9,13 @@ set background=dark
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch incsearch
 set updatetime=500
+set clipboard=unnamedplus
 nmap <leader>v :e ~/.vimrc<cr>
 nmap <leader>a ggVG
 nmap <leader>n :NERDTreeToggle<cr>
 nmap <leader>b :tabnext<cr>
 nmap <leader>x :LLPStartPreview<cr>
-nmap <esc><esc> :nohlsearch<cr>:w<cr>
+nmap <esc><esc> :nohlsearch<cr>:w<cr><c-l>
 noremap <a-cr> :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 noremap <leader>i :<C-u>call fsharpbinding#python#FsiSendLine()<cr>
 vnoremap <leader>i :<C-u>call fsharpbinding#python#FsiSendSel()<cr>
@@ -43,7 +44,10 @@ set foldmethod=indent
 set foldlevel=99
 
 " C
-nmap <leader>c :w<cr>:!gcc % -o %.exe & ./%.exe<cr>
+nmap <leader>c :w<cr>:!gcc % -o %.exe<cr>:!./%.exe<cr>
+
+" Build
+nmap <leader>b :w<cr>:!sh build.sh<cr>
 
 " Omni completion
 filetype plugin on
