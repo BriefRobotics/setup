@@ -53,4 +53,10 @@ git clone https://github.com/suan/vim-instant-markdown.git
 apt-get install okular # PDF viewer
 apt-get install texlive-latex-base
 apt-get install texlive-latex-extra
+agt-get install texlive-fonts-recommended
 git clone https://github.com/xuhdev/vim-latex-live-preview
+
+# Thesaurus - set thesaurus+=~/thesaurus/mthesaur.txt
+wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
+mkdir ~/thesaurus
+unzip mthes10.zip -d ~/thesaurus/

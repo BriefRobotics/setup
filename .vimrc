@@ -53,3 +53,6 @@ nmap <leader>b :w<cr>:!sh build.sh<cr>
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set dictionary-=/usr/share/dict/words dictionary+=/usr/share/dict/words
+
+" Thesaurus
+set thesaurus+=~/thesaurus/mthesaur.txt
