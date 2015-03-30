@@ -55,6 +55,8 @@ apt-get install texlive-latex-base
 apt-get install texlive-latex-extra
 agt-get install texlive-fonts-recommended
 git clone https://github.com/xuhdev/vim-latex-live-preview
+mktextfm gray # missing for metafont dev work
+mktextfm black # missing for metafont dev work
 
 # Thesaurus - set thesaurus+=~/thesaurus/mthesaur.txt
 wget http://www.gutenberg.org/dirs/etext02/mthes10.zip
