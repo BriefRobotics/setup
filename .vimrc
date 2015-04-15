@@ -69,6 +69,6 @@ imap <leader>" ""<c-o>i
 let g:airline_powerline_fonts = 1
 
 " pomodoro
-nmap <leader>ps :!pom start<cr>
-nmap <leader>pp :!pom pause<cr>
-nmap <leader>pt :!pom stop<cr>
+nmap <leader>ps :!pom start<cr><cr>
+nmap <leader>pp :!pom pause<cr><cr>
+nmap <leader>pt :!pom stop<cr><cr>
