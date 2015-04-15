@@ -35,3 +35,8 @@ cp lein /usr/local/bin
 chmod +x /usr/local/bin/lein
 
 apt-get install gcc
+
+apt-get install zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh # DANGER!
+
+apt-get install htop
