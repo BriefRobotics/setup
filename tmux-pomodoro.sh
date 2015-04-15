@@ -3,7 +3,7 @@
 # https://github.com/drakkhen/pom
 
 cp pom.py /usr/bin/
-chmod +x /usr/bin/pom.py
+chmod +xrw /usr/bin/pom.py
 
 # Commands
 # 
