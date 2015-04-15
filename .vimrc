@@ -65,3 +65,10 @@ imap <leader>[ []<c-o>i
 imap <leader>{ {}<c-o>i
 imap <leader>' ''<c-o>i
 imap <leader>" ""<c-o>i
+
+let g:airline_powerline_fonts = 1
+
+" pomodoro
+nmap <leader>ps :!pom start
+nmap <leader>pp :!pom pause
+nmap <leader>pt :!pom stop
