@@ -1,21 +1,29 @@
-#!/bin/bash
+# !/usr/bin/sh
 
-# https://github.com/justincampbell/tmux-pomodoro
+# https://github.com/drakkhen/pom
 
-wget -O tmux-pomodoro-latest.tar.gz https://github.com/justincampbell/tmux-pomodoro/archive/latest.tar.gz tmux-pomodoro
-tar -zxvf tmux-pomodoro-latest.tar.gz
-cd tmux-pomodoro-latest/
-make install
+cp pom.py /usr/bin/
+chmod +x /usr/bin/pom.py
 
-# .tmux.conf
-# # Place the current pomodoro status on the right side of your status bar
-# set -g status-right '#(pomodoro status)'
-
-# Map a key to start a timer
-# bind-key p run-shell 'pomodoro start'
-
-# commandss
-
-# start  - Start a timer for 25 minutes
-# status - Show the remaining time, or an exclamation point if done
-# clear  - Clear the timer
+# Commands
+# 
+# pom server: start up the pom server that will keep track of the timer
+# pom start: start a pomodoro of 25 minutes
+# pom pause: pause the current pomodoro
+# pom stop: stop the current pomodoro
+# pom shutdown: shutdown the pom server
+# pom status: information about the current pomodoro
+# pom tmux: output suitable for the tmux status bar
+# Tmux Integration
+# 
+# Sample .tmux.conf bindings:
+# 
+# bind m run 'pom stop' bind v run 'pom pause' bind b run 'pom start'
+# 
+# Status bar integration:
+# 
+# set -g status-right "#(pom tmux)"
+# 
+# If you add pom to your status bar, you might want to increase its update rate:
+# 
+# set -g status-interval 1
