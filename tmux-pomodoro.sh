@@ -2,8 +2,8 @@
 
 # https://github.com/drakkhen/pom
 
-cp pom.py /usr/bin/
-chmod +xrw /usr/bin/pom.py
+cp pom.py /usr/bin/pom
+chmod +xrw /usr/bin/pom
 
 # Commands
 # 

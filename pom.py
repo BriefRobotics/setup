@@ -158,30 +158,22 @@ def main(argv):
         data = send('json')
         data = json.loads(data)
 
-        fg = None
-        bg = 'default'
-        pomodoro = "🍅"
+        fg = 'white'
+        bg = 'red'
 
         if data['status'] == STATUS_STOP:
             return
 
         if data['mode'] == MODE_BREAK:
-            fg = 'red'
-        elif data['mode'] == MODE_WORK:
             fg = 'green'
+        elif data['mode'] == MODE_WORK:
+            fg = 'white'
 
         if data['status'] == STATUS_PAUSE:
-            bg = fg
-            fg = 'black'
-
-            if data['flash']:
-                pomodoro = ' '
-
-        if data['seconds'] < 30 and data['flash']:
-            pomodoro = ' '
+            fg = 'green'
 
         time_left = time.strftime('%M:%S', time.gmtime(data['seconds']))
-        print pomodoro, " #[nobright fg=%s bg=%s]%s#[bg=default fg=#500000] |" % (fg, bg, time_left)
+        print "#[nobright fg=%s bg=%s] %s #[bg=default fg=#500000]" % (fg, bg, time_left)
     else:
         usage()
 
