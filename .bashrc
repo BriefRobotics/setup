@@ -119,3 +119,5 @@ if ! shopt -oq posix; then
 fi
 
 export PYTHONPATH=$PYTHONPATH:~/proj/myro
+
+export TERM="xterm-256color"
