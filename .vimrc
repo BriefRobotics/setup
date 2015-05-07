@@ -45,6 +45,10 @@ vmap <leader>p :!python<cr>
 set foldmethod=indent
 set foldlevel=99
 
+" Node
+nmap <leader>n :w<cr>:!node %<cr>
+vmap <leader>n :!node<cr>
+
 " C
 nmap <leader>c :w<cr>:!gcc % -o %.exe<cr>:!./%.exe<cr>
 
