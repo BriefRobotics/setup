@@ -76,3 +76,6 @@ let g:airline_powerline_fonts = 1
 nmap <leader>ps :!pom start<cr><cr>
 nmap <leader>pp :!pom pause<cr><cr>
 nmap <leader>pt :!pom stop<cr><cr>
+
+" spelling
+set spellfile=~/.vim/spell/en.utf-8.add
