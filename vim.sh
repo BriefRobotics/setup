@@ -32,11 +32,11 @@ git clone git://github.com/tpope/vim-fireplace.git
 git clone https://github.com/bling/vim-airline
 
 # airline/powerline fonts
-wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-mv PowerlineSymbols.otf ~/.fonts/ # mkdir?
-fc-cache -vf ~/.fonts/
-mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/ # mkdir?
+# wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+# wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+# mv PowerlineSymbols.otf ~/.fonts/ # mkdir?
+# fc-cache -vf ~/.fonts/
+# mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/ # mkdir?
 
 # fsharp bindings
 mkdir tmp
