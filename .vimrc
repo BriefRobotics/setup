@@ -14,7 +14,7 @@ nmap <leader><space> i<space><esc>
 vmap <leader><space> I<space><esc>
 nmap <leader>v :e ~/.vimrc<cr>
 nmap <leader>a ggVG
-nmap <leader>n :NERDTreeToggle<cr>
+nmap <leader>t :NERDTreeToggle<cr>
 nmap <leader>b :tabnext<cr>
 nmap <leader>x :LLPStartPreview<cr>
 nmap <esc><esc> :nohlsearch<cr>:w<cr><c-l>
