@@ -4,12 +4,6 @@ apt-get -y update
 
 apt-get -y install curl
 
-apt-get -y install nodejs # not called 'node' under Ubuntu because of package name conflict
-sudo ln -y /usr/bin/nodejs /usr/bin/node # symlink to 'node'
-
-apt-get -y install npm
-sudo npm install -g forever
-
 apt-get -y install tmux
 
 apt-get -y install unity-tweak-tool
