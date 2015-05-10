@@ -6,8 +6,10 @@ apt-get -y install curl
 
 apt-get -y install tmux
 
-apt-get -y install unity-tweak-tool
-apt-get -y install gnome-tweak-tool
+# apt-get -y install unity-tweak-tool
+# apt-get -y install gnome-tweak-tool
+
+setxkbmap -option ctrl:nocaps
 
 apt-get -y install gcc
 
