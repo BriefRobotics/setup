@@ -31,6 +31,7 @@ git clone git://github.com/tpope/vim-sexp-mappings-for-regular-people.git
 git clone git://github.com/tpope/vim-fireplace.git
 git clone https://github.com/bling/vim-airline
 git clone https://github.com/leafgarland/typescript-vim
+git clone https://github.com/jelera/vim-javascript-syntax
 
 # airline/powerline fonts
 # wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
