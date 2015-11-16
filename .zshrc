@@ -95,3 +95,5 @@ git config --global credential.helper "cache --timeout=360000"
 eval $(thefuck --alias)
 
 alias shit='sudo $(history -p \!\!)'
+
+set -o vi
