@@ -97,3 +97,4 @@ eval $(thefuck --alias)
 alias shit='sudo $(history -p \!\!)'
 
 set -o vi
+bindkey -M vicmd v edit-command-line
