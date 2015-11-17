@@ -32,6 +32,8 @@ git clone git://github.com/tpope/vim-fireplace.git
 git clone https://github.com/bling/vim-airline
 git clone https://github.com/leafgarland/typescript-vim
 git clone https://github.com/jelera/vim-javascript-syntax
+git clone https://github.com/wlangstroth/vim-racket
+git clone https://github.com/horse-vim/vim-niji
 
 # airline/powerline fonts
 # wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
