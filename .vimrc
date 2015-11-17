@@ -88,3 +88,7 @@ set spellfile=~/.vim/spell/en.utf-8.add
 if has("autocmd")
   au BufReadPost *.rkt,*.rktl set filetype=scheme
 endif
+
+" Relative numbering
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
