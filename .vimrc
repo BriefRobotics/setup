@@ -10,6 +10,7 @@ set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set hlsearch incsearch
 set updatetime=500
 set clipboard=unnamedplus
+cmap w!! w !sudo tee %
 nmap <leader><space> i<space><esc>
 vmap <leader><space> I<space><esc>
 nmap <leader>v :e ~/.vimrc<cr>
