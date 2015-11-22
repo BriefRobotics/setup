@@ -1,0 +1,22 @@
+- Ubuntu
+  - Choose Colemak keyboard
+  - Install rEFInd (http://www.rodsbooks.com/refind/)
+- Terminal
+  - Pin to first icon
+  - Edit > Profile Preferences
+    - General
+      - Check "Custom font", choose "Ubuntu Mono Regular/16"
+    - Colors
+      - Uncheck "Use colors from system theme"
+      - Set "Built-in schemes:" to "White on Black"
+- Git
+  - sudo apt-get -y install git
+- Preferences
+  - Command "touchpad"
+    - Set "Pointer speed" to medium-fast (same as "Double-click")
+    - Check "Natural scrolling"
+- Setup
+  - mkdir ~/proj
+  - cd ~/proj/
+  - git clone http://github.com/brieftechnology/setup
+
