@@ -1,5 +1,7 @@
+alias tmux='tmux -2'
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ashleyfeniello/.oh-my-zsh
+export ZSH=/home/ashley/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,7 +51,7 @@ plugins=(git z node npm extract)
 
 # User configuration
 
-export PATH="/Users/ashleyfeniello/.node/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/uie/prototypes/sonar-runner:/usr/local/git/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,22 +81,29 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias cduw="cd ~/uie/bnt/web-server"
-alias cdup="cd ~/uie/prototypes"
-alias cdupn="cd ~/uie/prototypes/notes"
-alias cdupt="cd ~/uie/prototypes/tools"
-alias cduptj="cd ~/uie/prototypes/tools/jmeter/bin"
+# AshleyF Customizations
 
-alias sshw1="ssh qa@web001.dev14.ec2.uievolution.com"
-alias sshw2="ssh qa@web002.dev14.ec2.uievolution.com"
-alias sshw3="ssh qa@web003.dev14.ec2.uievolution.com"
-alias sshwso2="ssh qa@wso2.dev14.ec2.uievolution.com"
+bindkey -v # vim mode
 
-git config --global credential.helper cache
-git config --global credential.helper "cache --timeout=360000"
-eval $(thefuck --alias)
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
 
-alias shit='sudo $(history -p \!\!)'
+function zle-line-init zle-keymap-select { # mode indication
+    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+    zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+export KEYTIMEOUT=1 # small <esc> timeout
 
 set -o vi
 bindkey -M vicmd v edit-command-line
+
+alias cls=clear
+alias x=exit
