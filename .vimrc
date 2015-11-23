@@ -7,6 +7,9 @@ nmap <leader>q :w<cr> :!sh process.sh<cr>
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+" no temp (.swp, etc.) files in current directory
+set directory=~/tmp,/var/tmp,/tmp
+
 set number
 set background=dark
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
