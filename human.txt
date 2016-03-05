@@ -19,4 +19,7 @@
   - mkdir ~/proj
   - cd ~/proj/
   - git clone http://github.com/brieftechnology/setup
-
+- Caps Lock -> CTRL
+  - sudo apt-get install gnome-tweak-tool
+  - gnome-tweak-too
+  - Typing > Caps Lock behavior -> Make an additional CTRL
