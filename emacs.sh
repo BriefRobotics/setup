@@ -1,9 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-apt-get install emacs
-
-cp -f ./.emacs ~/.emacs
-
-# monokai
+mkdir ~/.emacs.d/
 mkdir ~/.emacs.d/themes/
-cp monokai-theme.el ~/.emacs.d/themes/
+cp init.el ~/.emacs.d/.
+cp monokai-theme.el ~/.emacs.d/themes/.
+apt-get install emacs
