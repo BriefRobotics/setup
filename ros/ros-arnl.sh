@@ -19,3 +19,8 @@ cd $CATKIN
 git clone https://github.com/MobileRobots/ros-arnl src/ros-arnl
 rosdep install --from-paths src --ignore-src --rosdistro=indigo -y
 catkin_make --force-cmake
+
+# serial port permissions
+sudo adduser ashleyf dialout
+sudo chmod a+rw /dev/ttyUSB0
+sudo chmod a+rw /dev/ttyUSB1
