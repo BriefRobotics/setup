@@ -17,4 +17,5 @@ rm -f $LIBARNL
 # ros-arnl
 cd $CATKIN
 git clone https://github.com/MobileRobots/ros-arnl src/ros-arnl
-catkin_make
+rosdep install --from-paths src --ignore-src --rosdistro=indigo -y
+catkin_make --force-cmake
