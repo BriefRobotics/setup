@@ -2,7 +2,7 @@
 
 ARNLBASE=arnl-base_1.9.2prerelease20160802+ubuntu12_amd64.deb
 LIBARNL=libarnl_1.9.2prerelease20160802+ubuntu12_amd64.deb
-CATKIN=~/proj/catkin
+CATKIN=~/proj/catkin_ws
 
 # install arnl-base
 curl -O -u microsoft http://robots.mobilerobots.com/BaseArnl/download/prerelease/$ARNLBASE
