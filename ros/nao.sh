@@ -21,3 +21,5 @@ cd ~/naoqi
 
 tar xzf naoqi-sdk*linux64.tar.gz
 tar xzf pynaoqi-python*linux64.tar.gz
+
+echo 'export PYTHONPATH=~/naoqi/pynaoqi-python2.7-2.1.4.13-linux64:$PYTHONPATH' >> ~/.zshrc
